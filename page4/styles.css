@@ -53,13 +53,11 @@
     flex-wrap: wrap;
     flex-direction: row;
     min-height: 100vh;
-    margin-top: 3.5rem; 
 }
 
 /* columns */
 .responsive-two-columns > * {
     width:100%;
-    padding:1rem;
 }
 
 .left-column,
@@ -118,11 +116,16 @@
   
   .number-navigation a {
     font-size: 1.25rem;
-    font-weight: 400;
+    font-weight: 600;
     color: #000; 
     line-height: 5rem;
     text-decoration: none;
   }
+
+.number-navigation a:hover {
+    text-decoration: line-through;
+}
+
 
 /* main content */
 .main-content {
@@ -141,6 +144,32 @@
 
 
 /* breakpoint */
+/* small screen adjustment */
+@media (min-width: 390px) { 
+    .left-column {
+        font-size: 10vw;
+        line-height: 5.625rem;
+    }
+
+    /* this is not working and is overriding the rest of the design for larger screens
+    On a small screen or mobile device I want the red column to extend to 100vh, but when
+    I did this the larger screens had the red color stop at 100vh despite adding allowing 
+    the column to extend the whole way with the right side.
+    .left-column {
+        height: 100vh
+    } 
+    */ 
+
+    .main-content p {
+        font-size: 1rem;
+    }
+
+    .subhead h2 {
+        font-size: 0.9rem;
+    }
+} 
+
+/* larger screens (768 and above) */
 @media (min-width:768px) {
     .responsive-two-columns > * {
         width:50%;
@@ -149,6 +178,8 @@
     .left-column,
     .right-column {
         width: 50%;
+        font-size: 6rem;
+        line-height: 10.625rem;
     }
 
 
@@ -160,20 +191,14 @@
         padding-top: 0; 
     }
 
-/* small screen adjustment */
-@media screen and (max-width: 390px) { 
-    .left-column {
-        font-size: 10vw;
-        line-height: normal;
-    }
-
     .main-content p {
-        font-size: 1rem;
+        font-size: 1.875rem; 
     }
 
     .subhead h2 {
-        font-size: 0.9rem;
+        font-size: 1.125rem; 
     }
+}
 
-}
-}
+
+
