@@ -37,15 +37,53 @@
     text-decoration: line-through;
 }
 
-.header .about-link {
+/* .header .about-link {
+    grid-column: 3 / 4;
+    justify-self: start;
+} */
+
+.header .about-container {
     grid-column: 3 / 4;
     justify-self: start; 
-    
+    position: relative;
 }
 
 .header .index-link {
     grid-column: 12 / 13;
     justify-self: end;
+}
+
+
+/* about popup styling */
+.about-popup {
+    position: absolute;
+    top: 1rem; 
+    left: 0;
+    width: 70%; /* Adjust width as needed */
+    padding: 1rem;
+    background-color: rgb(231, 0, 4);
+    border: 1px solid rgb(0,0,0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    opacity: 0; /* Initially hidden */
+    visibility: hidden; /* Prevent interaction when not visible */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1001; /* Ensure it appears above other elements */
+    font-size: 1.875rem;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+/* popup on hover */
+.about-container:hover .about-popup {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* link hover effect */
+.header .about-link:hover {
+    text-decoration: line-through;
 }
 
 /*content container*/
@@ -69,7 +107,6 @@
 .section1 {
     display: flex;
     flex-direction: column;
-    padding: 1rem 2rem;
     width: 100%;
     align-items: center;
 }
@@ -77,9 +114,18 @@
 .section1-words, .section1-numbers {
     justify-content: space-between;
     width: 100vw;
-    align-items: center;
     display: flex;
-    padding-bottom: 2rem;
+    
+}
+
+.section1-words {
+    padding-top: 17rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.section1-numbers {
+    padding: 2rem 2rem;
 }
 
 .section1-words span {
@@ -109,15 +155,34 @@
     color: rgb(0,0,0);
 }
 
+.section1-numbers a:hover {
+    text-decoration: line-through;
+}
+
+
 /* section 2 */
 .section2 {
     background-color: rgb(255, 255, 255);
     align-items: center;
+    padding: 20rem 38rem;
+    text-transform: uppercase;
+    line-height: 1.375rem;
+    letter-spacing: -0.01rem;
+    font-size: 1rem;
+    text-align: justify;
+    font-weight: 700;
 }
 
 /* section 3*/
 .section3 {
     background-color: rgb(231, 0, 4);
+    font-size: 12rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 9.6875rem;
+    letter-spacing: -0.325rem;
+    padding-left: 2rem;
+    padding-top: 5rem;
 }
 
 

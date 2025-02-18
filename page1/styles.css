@@ -155,10 +155,11 @@
 
 /* breakpoint */
 /* small screen adjustment */
-@media (min-width: 390px) { 
+@media (max-width: 390px) { 
     .left-column {
         font-size: 10vw;
         line-height: 5.625rem;
+        height: 100vh;
     }
 
     /* this is not working and is overriding the rest of the design for larger screens
