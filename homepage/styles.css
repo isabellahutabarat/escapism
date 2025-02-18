@@ -37,53 +37,15 @@
     text-decoration: line-through;
 }
 
-/* .header .about-link {
-    grid-column: 3 / 4;
-    justify-self: start;
-} */
-
-.header .about-container {
+.header .about-link {
     grid-column: 3 / 4;
     justify-self: start; 
-    position: relative;
+    
 }
 
 .header .index-link {
     grid-column: 12 / 13;
     justify-self: end;
-}
-
-
-/* about popup styling */
-.about-popup {
-    position: absolute;
-    top: 1rem; 
-    left: 0;
-    width: 70%; /* Adjust width as needed */
-    padding: 1rem;
-    background-color: rgb(231, 0, 4);
-    border: 1px solid rgb(0,0,0);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    opacity: 0; /* Initially hidden */
-    visibility: hidden; /* Prevent interaction when not visible */
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-    z-index: 1001; /* Ensure it appears above other elements */
-    font-size: 1.875rem;
-    font-weight: 500;
-    line-height: normal;
-    text-transform: uppercase;
-}
-
-/* popup on hover */
-.about-container:hover .about-popup {
-    opacity: 1;
-    visibility: visible;
-}
-
-/* link hover effect */
-.header .about-link:hover {
-    text-decoration: line-through;
 }
 
 /*content container*/
