@@ -75,7 +75,7 @@
 .left-column,
 .right-column {
     width: 100%;
-    padding: 2rem;
+    padding: 2.5rem 2rem;
 }
 
 .left-column {
@@ -183,7 +183,7 @@
     }
 } 
 
-@media (min-width:395px) {
+@media (min-width:394px) {
     .left-column {
         font-size: 8rem;
         line-height: 90%;
