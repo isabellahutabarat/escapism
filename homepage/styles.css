@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-style: normal;
+    line-height: normal;
+    background-color: rgb(231, 0, 4);
+  }
+
+/* header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 1rem 2rem;
+    background-color: #ffffff00; 
+    z-index: 1000; 
+}
+
+.header a {
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: black;
+    letter-spacing: 0.02363rem;
+}
+
+.header .title {
+    grid-column: 1 / 2; 
+    text-decoration: line-through;
+}
+
+.header .about-link {
+    grid-column: 3 / 4;
+    justify-self: start; 
+    
+}
+
+.header .index-link {
+    grid-column: 12 / 13;
+    justify-self: end;
+}
+
+/*content container*/
+.container {
+    scroll-snap-type: y mandatory; 
+    overflow-y: scroll; 
+    height: 100vh;
+}
+
+.section {
+    scroll-snap-align: start; 
+    height: 100vh; 
+    width: 100vw;
+    display: flex;
+    color: rgb(0,0,0);
+    padding: 1rem 2rem;
+    flex-direction: column;
+}
+
+/* section 1 */
+.section1-words, .section1-numbers {
+    justify-content: space-between;
+    width: 100vw;
+    align-items: center;
+    display: flex;
+    padding-bottom: 2rem;
+}
+
+.section1-words span {
+    font-size: 7.9375rem;
+    font-weight: 600;
+    line-height: 11.1875rem;
+    letter-spacing: -0.15875rem;
+    text-decoration-line: line-through;
+}
+
+.section1-words span:first-child, .section1-numbers a:first-child{
+    text-align: left; 
+ }
+ 
+ .section1-words span:last-child, .section1-numbers a:last-child {
+     text-align: right;
+ }
+
+.section1-numbers a {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 450;
+    line-height: 3.6875rem;
+    text-decoration: none;
+}
+
+/* section 2 */
+.section2 {
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+}
+
+/* section 3*/
+.section3 {
+    background-color: rgb(231, 0, 4);
+}
+
+
