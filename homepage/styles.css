@@ -128,6 +128,7 @@
 /* section 2 */
 .section2 {
     background-color: rgb(255, 255, 255);
+    justify-content: center;
     align-items: center;
     text-transform: uppercase;
     line-height: 1.375rem;
@@ -135,7 +136,12 @@
     font-size: 1rem;
     text-align: justify;
     font-weight: 700;
-    padding: clamp(10rem, 30vh, 30rem) clamp(10rem, 42vw, 40rem)
+    padding: 2rem;
+}
+
+.section2 p {
+    max-width: 20rem;
+    text-align: justify;
 }
 
 /* section 3*/
@@ -181,9 +187,24 @@
         font-size: 1rem; 
         line-height: 2rem;
     }
+
+    .section2 p {
+        max-width: 15rem; 
+        font-size: 0.875rem; 
+        line-height: 1.25rem; 
 }
 
-@media (max-width:393px) {
+} 
+
+@media (max-width: 480px) {
+    .section2 p {
+        max-width: 10rem; 
+        font-size: 0.75rem; 
+        line-height: 1.125rem;
+    }
+}
+
+@media (max-width:390px) {
     .section3 {
         font-size: 11rem;
     }
@@ -196,3 +217,5 @@
     }
 
 }
+
+
