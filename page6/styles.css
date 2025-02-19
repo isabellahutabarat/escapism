@@ -166,7 +166,7 @@
 
 
 /* breakpoint */
-@media (max-width: 393px) { 
+@media (max-width: 430px) { 
     .left-column {
         font-size: 6.25rem;
         line-height: 90%;
@@ -183,16 +183,16 @@
     }
 } 
 
-@media (min-width:395px) {
+@media (min-width:431px) {
     .left-column {
-        font-size: 8rem;
-        line-height: 90%;
+        font-size: 7rem;
+        line-height: 85%;
     }
 }
 
 @media (min-width:525px) {
     .left-column {
-        font-size: 10rem;
+        font-size: 7rem;
         line-height: 85%;
     }
 }
