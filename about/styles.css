@@ -158,8 +158,8 @@
 }
 
 .section2-title p {
-    color: rgb(231, 0, 4);
-    font-size: 1.8rem;
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -209,6 +209,12 @@
         letter-spacing: -0.015rem;
     }
 
+    .section2 p {
+        font-size: 1.5rem;
+        line-height: normal;
+    }
+
+
 } 
 
 @media (min-width:1024px) {
@@ -224,7 +230,12 @@
     }
 
     .section2-title h1 {
-        margin-bottom: 6rem;
+        margin-bottom: 5rem;
+    }
+
+    .section2 p {
+        font-size: 1.8rem;
+        line-height: normal;
     }
 
 }
