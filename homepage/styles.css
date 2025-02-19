@@ -135,7 +135,7 @@
     font-size: 1rem;
     text-align: justify;
     font-weight: 700;
-    padding: clamp(20rem, 10vh, 50rem) clamp(10rem, 40vw, 40rem);
+    padding: clamp(10rem, 30vh, 30rem) clamp(10rem, 42vw, 40rem)
 }
 
 /* section 3*/
