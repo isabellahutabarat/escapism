@@ -62,14 +62,14 @@
 
 /*about*/
 /* About section */
-div {
+.about {
     margin-top: 3rem; 
     display: grid;
     padding: 0 2rem; 
     padding-bottom: 4rem;
 }
 
-div p {
+.about p {
     text-align: left;
     color: rgb(0,0,0);
     font-size: 1.5rem;
@@ -80,15 +80,47 @@ div p {
     text-transform: uppercase;
 }
 
+/*footer*/
+.footer {
+    margin-top: 10rem; 
+    display: grid;
+    padding: 0 2rem; 
+    padding-bottom: 2rem;
+}
+
+.footer p {
+    text-align: left;
+    color: rgb(0,0,0);
+    font-size: 0.8rem;
+    line-height: 1.125rem;
+    padding: 0 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.footer a {
+    color:rgb(0,0,0);
+    text-decoration: underline;
+}
+
 /*breakpoint*/
 @media (min-width:768px) {
-    div {
+    .about {
         grid-template-columns: repeat(12, 1fr); 
     }
 
-    div p {
+    .about p {
         grid-column: 3 / 11; 
         font-size: 1.875rem;
         line-height: normal;
     }
+
+    .footer {
+        grid-template-columns: repeat(12, 1fr); 
+    }
+    
+    .footer p {
+        grid-column: 3 / 11; 
+    }
+
 }
