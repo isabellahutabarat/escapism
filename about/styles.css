@@ -111,7 +111,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    letter-spacing: -0.025rem;
+    letter-spacing: 0.0185rem;
     text-transform: uppercase;
 }
 
@@ -174,8 +174,6 @@
 
 
 /*breakpoint*/
-
-    
 
 @media (min-width:768px) {
     .section1-title p,
