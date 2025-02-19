@@ -142,7 +142,11 @@
     color: #000; 
     line-height: 5rem;
     text-decoration: none;
-  }
+}
+
+.number-navigation .red {
+    color: rgb(231, 0, 4);
+}
 
 .number-navigation a:hover {
     text-decoration: line-through;
