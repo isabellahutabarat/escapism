@@ -60,7 +60,6 @@ nav {
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 1rem;
     margin-top: 2rem;
 }
 
@@ -85,12 +84,24 @@ nav {
     text-decoration: line-through;
 }
 
+.section .last {
+    margin-bottom: 3rem;
+}
 /*breakpoint*/
 @media (min-width:393px) {
     .section a {
         font-size: 2.2rem;
         line-height: 95%;
         letter-spacing: -0.025rem;
+        padding-bottom: 0;
+    }
+
+    .section .start {
+        margin-top: 2.5rem;
+    }
+
+    .section {
+        margin-top: 0;
     }
 }
 
@@ -99,6 +110,7 @@ nav {
         font-size: 5rem;
         line-height: 92%;
         letter-spacing: -0.10625rem;
+        padding-bottom: 0rem;
     }
 }
 
@@ -108,6 +120,7 @@ nav {
         font-size: 6.5rem;
         line-height: 92%;
         letter-spacing: -0.20625rem;
+        padding-bottom: 2.5rem;
     }
 }
 
@@ -116,5 +129,6 @@ nav {
         font-size: 8.125rem;
         line-height: 7.5rem;
         letter-spacing: -0.30625rem;
+        padding-bottom: 2.5rem;
     }
 }
