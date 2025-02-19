@@ -107,7 +107,7 @@
 .section1 p{
     text-align: left;
     color: rgb(0,0,0);
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -174,13 +174,7 @@
 
 
 /*breakpoint*/
-@media (max-width:390px) {
-    .section1 p {
-        font-size: 5.5rem;
-        line-height: 90%;
-        letter-spacing: -0.015rem;
-    }
-}
+
     
 
 @media (min-width:768px) {
@@ -209,6 +203,12 @@
         margin-bottom: 13rem;
     }
 
+    .section1-title p,
+    .section1-author p {
+        font-size: 1.5rem;
+        letter-spacing: -0.015rem;
+    }
+
 } 
 
 @media (min-width:1024px) {
@@ -220,7 +220,7 @@
     }
 
     .section1 p {
-        font-size: 1.875rem;
+        font-size: 1.75rem;
     }
 
     .section2-title h1 {
