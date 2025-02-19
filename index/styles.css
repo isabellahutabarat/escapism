@@ -48,17 +48,6 @@
     justify-self: end;
 }
 
-.header .about-link:hover {
-    text-decoration: line-through;
-}
-
-.header .index-link:hover {
-    text-decoration: line-through;
-}
-
-.header .title:hover {
-    font-weight: 600;
-}
 
 /*nav*/
 nav {
